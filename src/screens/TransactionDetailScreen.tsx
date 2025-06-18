@@ -15,11 +15,11 @@ export const TransactionDetailScreen: React.FC<TransactionDetailScreenProps> = (
     try {
       await Share.share({
         message: `Transaction Details:
-Reference ID: ${transaction.refId}
-Date: ${formatDate(transaction.date)}
-Recipient: ${transaction.recipientName}
-Description: ${transaction.description}
-Amount: ${transaction.amount >= 0 ? '+' : ''}${transaction.amount.toFixed(2)}`,
+        Reference ID: ${transaction.refId}
+        Date: ${formatDate(transaction.date)}
+        Recipient: ${transaction.recipientName}
+        Description: ${transaction.description}
+        Amount: ${transaction.amount >= 0 ? '+' : ''}${transaction.amount.toFixed(2)}`,
       });
     } catch (error) {
       console.error('Error sharing:', error);

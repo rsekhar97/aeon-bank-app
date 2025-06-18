@@ -39,7 +39,14 @@ export const useTransactionStore = create<TransactionState>((set) => ({
           recipientName: "Emily Davis",
           description: "Emma Payments",
           amount: 1080.00
-        }
+        },
+        {
+          refId: "103344",
+          date: "2024-09-24T11:47:22",
+          recipientName: "Emily Davis",
+          description: "Food Payments",
+          amount: 50.00
+        },
       ]
     };
     
